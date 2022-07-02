@@ -1,8 +1,10 @@
-.homepage {
+.home {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 20px 80px;
+  overflow: hidden;
+}
+.homepage {
+  padding: 20px 0;
   h1 {
     font-size: 10px;
   }

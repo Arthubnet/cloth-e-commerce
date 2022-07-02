@@ -1,7 +1,7 @@
 import React from "react";
 import "./collection.styles.scss";
 import { useParams } from "react-router-dom";
-import CollectionItem from "./../../components/collection-item/collection-item.component";
+import CollectionItem from "./../../components/collection-item/CollectionItem";
 import { connect } from "react-redux";
 import { selectCollections } from "../../redux/shop/shop.selector";
 import { createStructuredSelector } from "reselect";

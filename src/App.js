@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import Homepage from "./pages/homepage/homepage.component";
-import Error from "./components/erorr.component";
-import ShopPage from "./pages/shop/shop.components";
-import Header from "./components/header/header.component";
-import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-out.component";
-import CheckoutPage from "./pages/checkout/checkout.component";
+import Homepage from "./pages/homepage/Homepage";
+import Error from "./components/Erorr";
+import ShopPage from "./pages/shop/Shop";
+import Header from "./components/header/Header";
+import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/SignInAndSignUp";
+import CheckoutPage from "./pages/checkout/Checkout";
 /* Firebase */
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, createUserDoc } from "./firebase/firebase.utils";
@@ -17,6 +17,7 @@ import { setCurrentUser } from "./redux/user/user.actions";
 
 class App extends React.Component {
   componentDidMount() {
+    console.log("test");
     const { setCurrentUser } = this.props;
     onAuthStateChanged(auth, async (currentUser) => {
       let dbUser = await createUserDoc(currentUser);
@@ -25,6 +26,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log("app rendered");
     return (
       <div className="App">
         <Router>

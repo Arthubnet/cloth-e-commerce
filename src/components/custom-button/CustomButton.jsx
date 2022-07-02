@@ -2,7 +2,7 @@ import React from "react";
 
 import "./custom-button.styles.scss";
 
-function CustomButon({ children, isGoogleSignIn, inverted, ...rest }) {
+function CustomButton({ children, isGoogleSignIn, inverted, ...rest }) {
   return (
     <button
       className={`${inverted ? "inverted" : ""} ${
@@ -15,4 +15,4 @@ function CustomButon({ children, isGoogleSignIn, inverted, ...rest }) {
   );
 }
 
-export default CustomButon;
+export default CustomButton;

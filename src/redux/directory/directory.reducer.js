@@ -20,7 +20,8 @@ let INITIAL_STATE = {
     },
     {
       title: "Caps",
-      imageUrl: "https://i.ibb.co/NNtYbgf/ezgif-2-d2ebdb4aac.jpg",
+      imageUrl:
+        "https://i.ibb.co/ZYxpBwy/fred-perry-white-Tonal-Tennis-Cap-In-White.png",
       id: 1,
       linkUrl: "shop/caps",
 
@@ -28,7 +29,7 @@ let INITIAL_STATE = {
     },
     {
       title: "Shoes",
-      imageUrl: "https://i.ibb.co/z5R9hTg/EGlfi-Xt-W4-AA2-K4j.jpg",
+      imageUrl: "https://i.ibb.co/R2FjyxG/EGlfi-Xt-W4-AA2-K4j.png",
       id: 2,
       linkUrl: "shop/shoes",
 
@@ -37,7 +38,7 @@ let INITIAL_STATE = {
     {
       title: "Bags",
       imageUrl:
-        "https://i.ibb.co/0mKt3fm/FP-Q1-Collection-Page-Accessories-155.jpg",
+        "https://i.ibb.co/dGrS7PX/FP-Q1-Collection-Page-Accessories-155.png",
       id: 3,
       linkUrl: "shop/bags",
 

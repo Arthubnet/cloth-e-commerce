@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 
-import CustomButon from "../custom-button/custom-button.component";
-import FormInput from "../form-input/form-input.component";
-import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import CustomButton from "../custom-button/CustomButton";
+import FormInput from "../form-input/FormInput";
+import {
+  createUserWithEmailAndPassword,
+  updateProfile,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 import { auth, addCollection } from "../../firebase/firebase.utils";
 
 import "./sign-up.styles.scss";
@@ -25,7 +29,7 @@ function SignUp() {
       try {
         /* prettier-ignore*/
         let { user } = await createUserWithEmailAndPassword(auth, email, password);
-        console.log(user);
+        await signInWithEmailAndPassword(auth, email, password);
         /* Updates displayName in firebase object */
         await updateProfile(user, {
           displayName: displayName,
@@ -89,7 +93,7 @@ function SignUp() {
           label="Confirm Password"
           required={true}
         />
-        <CustomButon type="submit">SIGN UP</CustomButon>
+        <CustomButton type="submit">SIGN UP</CustomButton>
       </form>
     </div>
   );

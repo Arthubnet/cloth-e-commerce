@@ -2,11 +2,11 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 
 function StripeCheckoutButton({ price }) {
+  let API = process.env.REACT_APP_STRIPE;
   const priceForStripe = price * 100;
   /* prettier-ignore */
-  const publishableKey = "pk_test_51L9QQUE9r2n1N8end3s9Ot2HbaZoK4DjGmiNw77KEddGPv3EhlZaRakrtHtlsRQXXdu4pNPPkMeqcHmufCTArWXq00OIPEiJgT";
+  const publishableKey = API;
   let onToken = (token) => {
-    console.log(token);
     alert("Payment Successful");
   };
   return (
@@ -15,7 +15,7 @@ function StripeCheckoutButton({ price }) {
       name="Fam eCommerce Ltd."
       billingAddress
       shippingAddress
-      image="https://svgshare.com/i/CUz.svg"
+      image="https://www.emquartier.co.th/wp-content/uploads/2019/12/fred-perry-logo.jpg"
       description={`Your total is $${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"

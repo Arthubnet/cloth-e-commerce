@@ -1,13 +1,10 @@
 .menu-item {
-  min-width: 30%;
-  height: 80vh;
-  margin: 20px 7.5px 15px;
+  width: 30%;
+  margin: 20px 10px 15px;
   overflow: hidden;
   position: relative;
   &:hover {
-    cursor: pointer;
-
-    & .background-image {
+    & img {
       transform: scale(1.05);
       transition: transform 3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
     }
@@ -19,23 +16,20 @@
 
   &.large {
     min-width: 45%;
-    height: 110vh;
-    margin: 0 40px;
-  }
-
-  &:first-child {
-    margin-right: 7.5px;
-  }
-
-  &:last-child {
-    margin-left: 7.5px;
+    height: auto;
   }
 
   .background-image {
     width: 100%;
-    height: 90%;
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 0;
+    img {
+      width: 100%;
+    }
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .content {
@@ -49,19 +43,13 @@
     background-color: white;
     opacity: 0;
     position: absolute;
-    bottom: 13%;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
     &:hover {
       background-color: black;
       color: white;
       border: none;
-    }
-    .title {
-      font-weight: bold;
-      margin-bottom: 6px;
-      font-size: 22px;
-      color: black;
     }
 
     .subtitle {

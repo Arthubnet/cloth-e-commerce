@@ -1,11 +1,11 @@
 import React from "react";
-import CustomButon from "../custom-button/custom-button.component";
-import FormInput from "../form-input/form-input.component";
+import CustomButton from "../custom-button/CustomButton";
+import FormInput from "../form-input/FormInput";
 import { useState } from "react";
 import "./sign-in.styles.scss";
 /* prettier-ignore */
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "./../../firebase/firebase.utils";
+import { auth } from "../../firebase/firebase.utils";
 
 function SignIn() {
   let [signIn, setSignIn] = useState({ email: "", password: "" });
@@ -59,12 +59,12 @@ function SignIn() {
           label="Password"
         />
         <div className="buttons">
-          <CustomButon type="submit">Sign in</CustomButon>
+          <CustomButton type="submit">Sign in</CustomButton>
           {/* prettier-ignore */}
-          <CustomButon
+          <CustomButton
               type="button"
               onClick={signInWithGoogle}
-              isGoogleSignIn>Sign in with Google</CustomButon>
+              isGoogleSignIn>Sign in with Google</CustomButton>
         </div>
       </form>
     </div>
