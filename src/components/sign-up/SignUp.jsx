@@ -11,7 +11,7 @@ import { auth, addCollection } from "../../firebase/firebase.utils";
 
 import "./sign-up.styles.scss";
 
-function SignUp() {
+function SignUp({ setLoading }) {
   let [signUp, setSignUp] = useState({
     displayName: "",
     email: "",
@@ -27,6 +27,7 @@ function SignUp() {
       alert("Check your password");
     } else {
       try {
+        setLoading(true);
         /* prettier-ignore*/
         let { user } = await createUserWithEmailAndPassword(auth, email, password);
         await signInWithEmailAndPassword(auth, email, password);
@@ -47,6 +48,7 @@ function SignUp() {
       } catch (error) {
         alert(error);
       }
+      setLoading(false);
     }
   };
 

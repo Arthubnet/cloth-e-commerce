@@ -5,21 +5,28 @@ import { useState } from "react";
 import "./sign-in.styles.scss";
 /* prettier-ignore */
 import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { auth } from "../../firebase/firebase.utils";
+import {
+  auth,
+  addCollection,
+  createUserDoc,
+} from "../../firebase/firebase.utils";
 
-function SignIn() {
+function SignIn({ setLoading }) {
   let [signIn, setSignIn] = useState({ email: "", password: "" });
   let { email, password } = signIn;
 
   let handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true);
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      let { user } = await signInWithEmailAndPassword(auth, email, password);
+      await createUserDoc(user);
       setSignIn({ email: "", password: "" });
     } catch (error) {
       alert("Check your email or password");
       console.log(error);
     }
+    setLoading(false);
   };
 
   let handleChange = (event) => {
@@ -30,10 +37,11 @@ function SignIn() {
   let signInWithGoogle = async (event) => {
     event.preventDefault();
     const provider = new GoogleAuthProvider();
-    await signInWithPopup(auth, provider).then((result) => {
+    await signInWithPopup(auth, provider).then(async (result) => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
       const user = result.user;
+      await addCollection(user.displayName, user.email, user.uid);
     });
   };
 
