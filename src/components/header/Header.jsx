@@ -25,8 +25,9 @@ function Header({ currentUser, hidden }) {
           SHOP
         </Link>
         {currentUser ? (
-          <div className="option" onClick={() => signOut()}>
-            SIGN OUT
+          <div className="option " onClick={() => signOut()}>
+            <span className="user">{`${currentUser.displayName}`}</span>, SIGN
+            OUT
           </div>
         ) : (
           <Link className="option" to={"/signin"}>
