@@ -1,17 +1,26 @@
 import React, { useState } from "react";
+import "./sign-up.styles.scss";
 
 import CustomButton from "../custom-button/CustomButton";
 import FormInput from "../form-input/FormInput";
+/* Firebase */
 import {
   createUserWithEmailAndPassword,
   updateProfile,
   signInWithEmailAndPassword,
+  onAuthStateChanged,
 } from "firebase/auth";
-import { auth, addCollection } from "../../firebase/firebase.utils";
+import {
+  auth,
+  addCollection,
+  createUserDoc,
+} from "../../firebase/firebase.utils";
 
-import "./sign-up.styles.scss";
+/* Redux */
+import { connect } from "react-redux";
+import { setCurrentUser } from "./../../redux/user/user.actions";
 
-function SignUp({ setLoading }) {
+function SignUp({ setLoading, setCurrentUser }) {
   let [signUp, setSignUp] = useState({
     displayName: "",
     email: "",
@@ -37,6 +46,10 @@ function SignUp({ setLoading }) {
         });
         /* creates Doc with user's uid */
         await addCollection(displayName, email, user.uid);
+        onAuthStateChanged(auth, async (currentUser) => {
+          let dbUser = await createUserDoc(currentUser);
+          setCurrentUser(dbUser);
+        });
         alert("Success! Account created");
         /*       await createUserProfileDocument(user, { displayName }); */
         setSignUp({
@@ -101,4 +114,8 @@ function SignUp({ setLoading }) {
   );
 }
 
-export default SignUp;
+let mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+});
+
+export default connect(null, mapDispatchToProps)(SignUp);

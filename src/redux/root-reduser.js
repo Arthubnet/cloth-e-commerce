@@ -1,4 +1,3 @@
-//combines all states together, it's root
 import { combineReducers } from "redux"; // for combining all the reducers
 
 import userReducer from "./user/user.reducer";

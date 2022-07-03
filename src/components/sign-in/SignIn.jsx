@@ -4,14 +4,22 @@ import FormInput from "../form-input/FormInput";
 import { useState } from "react";
 import "./sign-in.styles.scss";
 /* prettier-ignore */
-import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider,
+  onAuthStateChanged,
+} from "firebase/auth";
 import {
   auth,
   addCollection,
   createUserDoc,
 } from "../../firebase/firebase.utils";
+/* Redux */
+import { connect } from "react-redux";
+import { setCurrentUser } from "./../../redux/user/user.actions";
 
-function SignIn({ setLoading }) {
+function SignIn({ setLoading, setCurrentUser }) {
   let [signIn, setSignIn] = useState({ email: "", password: "" });
   let { email, password } = signIn;
 
@@ -20,7 +28,10 @@ function SignIn({ setLoading }) {
     setLoading(true);
     try {
       let { user } = await signInWithEmailAndPassword(auth, email, password);
-      await createUserDoc(user);
+      onAuthStateChanged(auth, async (currentUser) => {
+        let dbUser = await createUserDoc(currentUser);
+        setCurrentUser(dbUser);
+      });
       setSignIn({ email: "", password: "" });
     } catch (error) {
       alert("Check your email or password");
@@ -79,4 +90,8 @@ function SignIn({ setLoading }) {
   );
 }
 
-export default SignIn;
+let mapDispatchToProps = (dispatch) => ({
+  setCurrentUser: (user) => dispatch(setCurrentUser(user)),
+});
+
+export default connect(null, mapDispatchToProps)(SignIn);
