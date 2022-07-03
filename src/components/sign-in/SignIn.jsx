@@ -53,6 +53,10 @@ function SignIn({ setLoading, setCurrentUser }) {
       const token = credential.accessToken;
       const user = result.user;
       await addCollection(user.displayName, user.email, user.uid);
+      onAuthStateChanged(auth, async (currentUser) => {
+        let dbUser = await createUserDoc(currentUser);
+        setCurrentUser(dbUser);
+      });
     });
   };
 
