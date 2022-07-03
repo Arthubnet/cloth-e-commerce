@@ -9,7 +9,9 @@ const CollectionItem = ({ addItem, item }) => {
   const { imageUrl, name, price } = item;
   return (
     <div className="collection-item">
-      <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
+      <div className="image">
+        <img src={imageUrl} loading="lazy" alt={name} />
+      </div>
       <div className="collection-footer">
         <div className="name">{name}</div>
         <div className="price">{`$${price}`}</div>
