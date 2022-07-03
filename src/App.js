@@ -18,9 +18,10 @@ import { setCurrentUser } from "./redux/user/user.actions";
 class App extends React.Component {
   componentDidMount() {
     const { setCurrentUser } = this.props;
-    onAuthStateChanged(auth, async (currentUser) => {
-      let dbUser = await createUserDoc(currentUser);
-      setCurrentUser(dbUser);
+    onAuthStateChanged(auth, async (anything) => {
+      console.log(anything);
+      /*  let dbUser = await createUserDoc(currentUser);
+      setCurrentUser(dbUser); */
     });
   }
 
