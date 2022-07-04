@@ -2,10 +2,9 @@ import React from "react";
 import StripeCheckout from "react-stripe-checkout";
 
 function StripeCheckoutButton({ price }) {
-  let API = process.env.REACT_APP_STRIPE;
   const priceForStripe = price * 100;
   /* prettier-ignore */
-  const publishableKey = API;
+  const publishableKey = `${process.env.REACT_APP_STRIPE}`;
   let onToken = (token) => {
     alert("Payment Successful");
   };

@@ -9,13 +9,13 @@ import {
 } from "firebase/firestore/lite";
 
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT,
-  storageBucket: process.env.REACT_APP_STORAGE,
-  messagingSenderId: process.env.REACT_APP_MESSAGING,
-  appId: process.env.REACT_APP_APP_ID,
-  measurementId: process.env.REACT_APP_MEASUREMENT,
+  apiKey: `${process.env.REACT_APP_API}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
+  projectId: `${process.env.REACT_APP_PROJECT}`,
+  storageBucket: `${process.env.REACT_APP_STORAGE}`,
+  messagingSenderId: `${process.env.REACT_APP_MESSAGING}`,
+  appId: `${process.env.REACT_APP_APP_ID}`,
+  measurementId: `${process.env.REACT_APP_MEASUREMENT}`,
 };
 
 initializeApp(firebaseConfig);
