@@ -6,7 +6,7 @@ const SHOP_DATA = [
     items: [
       {
         id: 30,
-        name: "Printed BlockSweatshirt",
+        name: "Printed Block Sweatshirt",
         imageUrl:
           "https://i.ibb.co/JvVC7rK/Printed-Colour-Block-Sweatshirt.jpg",
         price: 140,
@@ -62,12 +62,13 @@ const SHOP_DATA = [
         imageUrl: "https://i.ibb.co/k4zN0JT/Printed-Collar-Piqu-Dress.jpg",
         price: 80,
       },
-      {
+      /* {
         id: 26,
         name: "Red Dots Dress",
         imageUrl: "https://i.ibb.co/BGr3Wm9/Printed-Short-Sleeve-Jumper.jpg",
         price: 80,
-      },
+        
+      }, */
       {
         id: 27,
         name: "Striped Sweater",

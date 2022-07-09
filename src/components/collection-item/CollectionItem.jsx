@@ -6,9 +6,9 @@ import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.actions";
 
 const CollectionItem = ({ addItem, item }) => {
-  const { imageUrl, name, price } = item;
+  const { imageUrl, name, price, size } = item;
   return (
-    <div className="collection-item">
+    <div className={`${size ? "big" : ""} collection-item`}>
       <div className="image">
         <img src={imageUrl} loading="lazy" alt={name} />
         <CustomButton onClick={() => addItem(item)} inverted>

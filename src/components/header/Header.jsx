@@ -24,6 +24,19 @@ function Header({ currentUser, hidden }) {
         <Link className="option" to={"/shop"}>
           SHOP
         </Link>
+        <div className="option dropdown">
+          <button className="dropbtn">
+            CATEGORIES
+            <span>&#8595;</span>
+          </button>
+          <div class="dropdown-content">
+            <a href="/shop/mens">MEN'S</a>
+            <a href="shop/womens">WOMEN'S</a>
+            <a href="shop/caps">CAPS</a>
+            <a href="shop/shoes">SHOES</a>
+            <a href="shop/bags">BAGS</a>
+          </div>
+        </div>
         {currentUser ? (
           <div className="option " onClick={() => signOut()}>
             SIGN OUT

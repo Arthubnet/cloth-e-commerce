@@ -31,11 +31,40 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
-      &:hover {
+      /*   &:hover {
         opacity: 0.7;
-      }
+      } */
       .user {
         color: rgb(62, 62, 255);
+      }
+    }
+    .dropdown {
+      overflow: hidden;
+      .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .dropdown-content {
+        display: none;
+        flex-direction: column;
+        gap: 3px;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        opacity: 1;
+        a {
+          padding-left: 10px;
+        }
+      }
+      &:hover .dropdown-content {
+        display: flex;
       }
     }
   }

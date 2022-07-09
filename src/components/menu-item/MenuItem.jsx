@@ -15,7 +15,6 @@ const MenuItem = ({
     <div className={`${size} menu-item`}>
       <div onClick={() => navigate(`${linkUrl}`)} className="background-image">
         <img src={imageUrl} alt={category} />
-
         <div className="content">
           <span className="subtitle">Shop Now</span>
         </div>
