@@ -45,12 +45,27 @@
     font-size: 18px;
 
     .name {
-      width: 90%;
       margin-bottom: 15px;
     }
+  }
+}
 
-    .price {
-      width: 10%;
-    }
+@media all and (max-width: 1250px) {
+  .collection-item {
+    width: 43vw;
+    padding-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .collection-item {
+    width: 95%;
+    height: 80vh;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .collection-item {
+    height: auto;
   }
 }

@@ -5,4 +5,9 @@
   justify-content: center;
   gap: 80px;
   margin: 30px auto;
+  @media all and (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
 }

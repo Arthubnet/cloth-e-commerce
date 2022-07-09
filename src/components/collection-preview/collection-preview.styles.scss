@@ -11,5 +11,17 @@
   .preview {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (max-width: 850px) {
+  .collection-preview {
+    .title {
+      text-align: center;
+    }
+    .preview {
+      justify-content: center;
+    }
   }
 }

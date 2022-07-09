@@ -6,6 +6,9 @@
   height: 45vh;
   position: relative;
   display: flex;
+  @media all and (max-width: 850px) {
+    display: none;
+  }
   &__inner {
     display: flex;
     animation: marquee 20s linear infinite;

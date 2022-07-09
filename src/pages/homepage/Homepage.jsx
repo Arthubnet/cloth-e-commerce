@@ -1,15 +1,15 @@
 import React from "react";
 import Directory from "../../components/directory/Directory";
 import "./homepage.styles.scss";
-import Hero from "./hero/Hero";
+import Hero from "./Hero";
 import Carousel from "./Carousel";
 
 const Homepage = () => {
   return (
-    <div className="home">
+    <div className="homepage">
       <Hero />
       <Carousel />
-      <div className="homepage">
+      <div className="directory">
         <Directory />
       </div>
     </div>

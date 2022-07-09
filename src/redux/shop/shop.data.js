@@ -6,7 +6,7 @@ const SHOP_DATA = [
     items: [
       {
         id: 30,
-        name: "Printed Colour BlockSweatshirt",
+        name: "Printed BlockSweatshirt",
         imageUrl:
           "https://i.ibb.co/JvVC7rK/Printed-Colour-Block-Sweatshirt.jpg",
         price: 140,

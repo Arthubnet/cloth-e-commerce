@@ -11,7 +11,7 @@ function Hero() {
         <h1>A British Icon</h1>
         <p>
           We feel safe to say that our new collection is most succesfull one.
-          Check our graphic prints and sporitng colours.
+          Check our graphic prints and sporting colours.
         </p>
         <Link to="/shop">Shop now</Link>
       </div>
