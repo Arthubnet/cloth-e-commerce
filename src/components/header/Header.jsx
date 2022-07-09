@@ -14,11 +14,17 @@ function Header({ currentUser, hidden }) {
   let signOut = async () => {
     await auth.signOut();
   };
+  let scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
   return (
     <div className="header">
       <Link to={"/"}>
-        <Logo className="logo" />
+        <Logo className="logo" onClick={() => scrollUp()} />
       </Link>
       <div className="options">
         <Link className="option" to={"/shop"}>

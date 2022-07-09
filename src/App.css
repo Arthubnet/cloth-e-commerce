@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 8vh 0 5vh 0;
   font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
