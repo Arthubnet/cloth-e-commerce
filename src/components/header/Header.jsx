@@ -30,11 +30,21 @@ function Header({ currentUser, hidden }) {
             <span>&#8595;</span>
           </button>
           <div class="dropdown-content">
-            <a href="/shop/mens">MEN'S</a>
-            <a href="shop/womens">WOMEN'S</a>
-            <a href="shop/caps">CAPS</a>
-            <a href="shop/shoes">SHOES</a>
-            <a href="shop/bags">BAGS</a>
+            <a href="https://fred-ecommerce-project.herokuapp.com/shop/mens">
+              Men's
+            </a>
+            <a href="https://fred-ecommerce-project.herokuapp.com/shop/womens">
+              Women's
+            </a>
+            <a href="https://fred-ecommerce-project.herokuapp.com/shop/caps">
+              Caps
+            </a>
+            <a href="https://fred-ecommerce-project.herokuapp.com/shop/shoes">
+              Shoes
+            </a>
+            <a href="https://fred-ecommerce-project.herokuapp.com/shop/bags">
+              Bags
+            </a>
           </div>
         </div>
         {currentUser ? (
