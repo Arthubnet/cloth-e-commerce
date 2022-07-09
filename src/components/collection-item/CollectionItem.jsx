@@ -11,14 +11,14 @@ const CollectionItem = ({ addItem, item }) => {
     <div className="collection-item">
       <div className="image">
         <img src={imageUrl} loading="lazy" alt={name} />
+        <CustomButton onClick={() => addItem(item)} inverted>
+          Add to cart
+        </CustomButton>
       </div>
       <div className="collection-footer">
         <div className="name">{name}</div>
         <div className="price">{`$${price}`}</div>
       </div>
-      <CustomButton onClick={() => addItem(item)} inverted>
-        Add to cart
-      </CustomButton>
     </div>
   );
 };

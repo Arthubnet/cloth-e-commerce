@@ -38,3 +38,12 @@
     cursor: pointer;
   }
 }
+
+@media all and (max-width: 650px) {
+  .checkout-item {
+    justify-content: space-between;
+    .price {
+      width: 15%;
+    }
+  }
+}
