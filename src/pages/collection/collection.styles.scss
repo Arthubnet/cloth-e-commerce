@@ -10,10 +10,17 @@
   .items {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: space-between;
     & .collection-item {
       margin-bottom: 30px;
+    }
+  }
+}
+
+@media all and (max-width: 850px) {
+  .collection-page {
+    .items {
+      justify-content: center;
     }
   }
 }
