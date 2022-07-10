@@ -27,14 +27,8 @@ function Header({ currentUser, hidden }) {
         <Logo className="logo" onClick={() => scrollUp()} />
       </Link>
       <div className="options">
-        <Link className="option" to={"/shop"}>
-          SHOP
-        </Link>
-        <div className="option dropdown">
-          <button className="dropbtn">
-            CATEGORIES
-            <span>&#8595;</span>
-          </button>
+        <div className="dropdown">
+          <button className="dropbtn">CATEGORIES</button>
           <div class="dropdown-content">
             <a href="https://fred-ecommerce-project.herokuapp.com/shop/mens">
               Men's
@@ -53,6 +47,9 @@ function Header({ currentUser, hidden }) {
             </a>
           </div>
         </div>
+        <Link className="option" to={"/shop"}>
+          SHOP
+        </Link>
         {currentUser ? (
           <div className="option " onClick={() => signOut()}>
             SIGN OUT

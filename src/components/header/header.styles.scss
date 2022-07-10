@@ -31,11 +31,8 @@
     .option {
       padding: 10px 15px;
       cursor: pointer;
-      /*   &:hover {
+      &:hover {
         opacity: 0.7;
-      } */
-      .user {
-        color: rgb(62, 62, 255);
       }
     }
     .dropdown {
@@ -60,7 +57,11 @@
         z-index: 1;
         opacity: 1;
         a {
-          padding: 6px;
+          padding: 6px 20px;
+          &:hover {
+            cursor: pointer;
+            opacity: 0.7;
+          }
         }
       }
       &:hover .dropdown-content {
