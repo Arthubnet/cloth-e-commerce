@@ -23,8 +23,8 @@ function Header({ currentUser, hidden }) {
 
   return (
     <div className="header">
-      <Link to={"/"}>
-        <Logo className="logo" onClick={() => scrollUp()} />
+      <Link className="logo" to={"/"}>
+        <Logo onClick={() => scrollUp()} />
       </Link>
       <div className="options">
         <div className="dropdown">
