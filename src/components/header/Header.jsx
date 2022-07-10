@@ -47,7 +47,7 @@ function Header({ currentUser, hidden }) {
             </a>
           </div>
         </div>
-        <Link className="option" to={"/shop"}>
+        <Link className="option shop" to={"/shop"}>
           SHOP
         </Link>
         {currentUser ? (
