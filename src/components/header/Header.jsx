@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import "./header.styles.scss";
 import { Link } from "react-router-dom";
@@ -29,22 +29,13 @@ function Header({ currentUser, hidden }) {
       <div className="options">
         <div className="dropdown">
           <button className="dropbtn">CATEGORIES</button>
-          <div class="dropdown-content">
-            <a href="https://fred-ecommerce-project.herokuapp.com/shop/mens">
-              Men's
-            </a>
-            <a href="https://fred-ecommerce-project.herokuapp.com/shop/womens">
-              Women's
-            </a>
-            <a href="https://fred-ecommerce-project.herokuapp.com/shop/caps">
-              Caps
-            </a>
-            <a href="https://fred-ecommerce-project.herokuapp.com/shop/shoes">
-              Shoes
-            </a>
-            <a href="https://fred-ecommerce-project.herokuapp.com/shop/bags">
-              Bags
-            </a>
+          <div className="dropdown-content">
+            <Link to={"/shop/polos"}>Polos</Link>
+            <Link to={"/shop/sweatshirts"}>Sweatshirts</Link>
+            <Link to={"/shop/dresses"}>Dresses</Link>
+            <Link to={"/shop/caps"}>Caps</Link>
+            <Link to={"/shop/shoes"}>Shoes</Link>
+            <Link to={"/shop/bags"}>Bags</Link>
           </div>
         </div>
         <Link className="option shop" to={"/shop"}>
@@ -61,7 +52,7 @@ function Header({ currentUser, hidden }) {
         )}
         <CartIcon />
       </div>
-      {hidden ? null : <CartDropdown />}
+      {hidden ? <CartDropdown /> : null}
     </div>
   );
 }

@@ -9,7 +9,7 @@ let ShopPage = () => {
     <div className="shop-page">
       <Routes>
         <Route path="/" element={<CollectionsOverview />} />
-        <Route path=":collectionPage" element={<CollectionPage />} />
+        <Route path=":collectionPage/*" element={<CollectionPage />} />
       </Routes>
     </div>
   );

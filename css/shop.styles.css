@@ -1,0 +1,15 @@
+.shop-page {
+  padding: 0 50px;
+}
+
+@media all and (max-width: 850px) {
+  .shop-page {
+    padding: 0 20px;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .shop-page {
+    padding: 0;
+  }
+}

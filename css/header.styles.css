@@ -1,0 +1,108 @@
+.header {
+  position: fixed;
+  height: 8vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 50px;
+  z-index: 1000;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+}
+
+@media all and (max-width: 850px) {
+  .header {
+    padding: 0 5%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .header {
+    padding: 0 2%;
+  }
+}
+
+.header .logo {
+  font-size: 0;
+}
+
+.header .options {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .options .option {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.header .options .option:hover {
+  opacity: 0.7;
+}
+
+@media all and (max-width: 450px) {
+  .header .options .shop {
+    display: none;
+  }
+}
+
+.header .options .dropdown {
+  overflow: hidden;
+}
+
+.header .options .dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 0.9rem 1rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.header .options .dropdown .dropdown-content {
+  padding: 0.5rem 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 1;
+}
+
+.header .options .dropdown .dropdown-content a {
+  padding: 0.5rem 1.25rem;
+}
+
+.header .options .dropdown .dropdown-content a:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.header .options .dropdown:hover .dropdown-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

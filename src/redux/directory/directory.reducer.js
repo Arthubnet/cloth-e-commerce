@@ -1,3 +1,6 @@
+/* import sweatshirtsPreview from "../../assets/MiConv.com__M7535_184_1.jpg";
+import dressesPreview from "../../assets/Dresses/Boxy Pique Shirt/G4139_102_1.jpg"; */
+
 let INITIAL_STATE = {
   sections: [
     {
@@ -5,8 +8,8 @@ let INITIAL_STATE = {
       imageUrl: "https://i.ibb.co/1nXTYmY/FP-Q2-MW-Sharp-hp-4-5-1.jpg",
       size: "large",
       id: 4,
-      linkUrl: "shop/mens",
-      category: "MEN'S",
+      linkUrl: "shop/sweatshirts",
+      category: "Sweatshirts",
       description: "Sharp styling inspired by the British subcultural uniform",
     },
     {
@@ -14,8 +17,8 @@ let INITIAL_STATE = {
       imageUrl: "https://i.ibb.co/QKGJKnP/FP-Q2-HP-Womens-4-5-1.jpg",
       size: "large",
       id: 5,
-      linkUrl: "shop/womens",
-      category: "WOMEN'S",
+      linkUrl: "shop/dresses",
+      category: "Dresses",
       description: "This just in – shop our latest arrivals",
     },
     {

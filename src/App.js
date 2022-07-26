@@ -14,6 +14,7 @@ import { auth, createUserDoc } from "./firebase/firebase.utils";
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
+import ProductPage from "./pages/product-page/ProductPage";
 
 class App extends React.Component {
   componentDidMount() {

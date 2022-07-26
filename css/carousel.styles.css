@@ -1,0 +1,25 @@
+.carousel {
+  margin: 5vh 0;
+  background: #f6f6f6;
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7rem;
+  background: #f6f6f6;
+}
+
+.carousel__inner-image {
+  height: 315px;
+  max-width: 250px;
+}
+
+/* heights 390, 295  */

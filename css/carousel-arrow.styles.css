@@ -1,0 +1,24 @@
+.carousel-arrow {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  border: 1px black solid;
+  padding: 0.9rem 0;
+  z-index: 2;
+  background: white;
+  cursor: pointer;
+}
+
+.carousel-arrow.left {
+  left: 2%;
+}
+
+.carousel-arrow.right {
+  right: 2%;
+}
+
+.carousel-arrow svg {
+  width: 100%;
+  height: 100%;
+}
