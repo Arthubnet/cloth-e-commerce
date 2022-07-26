@@ -92,9 +92,9 @@ import classicBarrelBag3 from "../../assets/Bags/Classic Barrel Bag/AnyConv.com_
 import contrastRipstopBackpack1 from "../../assets/Bags/Contrast Ripstop Backpack/AnyConv.com__L3248_P11_1.jpg";
 import contrastRipstopBackpack2 from "../../assets/Bags/Contrast Ripstop Backpack/AnyConv.com__L3248_P11_2.jpg";
 
-import piquéTexturedWashBag1 from "../../assets/Bags/Piqué Textured Wash Bag/AnyConv.com__L2262_102_1.jpg";
-import piquéTexturedWashBag2 from "../../assets/Bags/Piqué Textured Wash Bag/AnyConv.com__L2262_102_2.jpg";
-import piquéTexturedWashBag3 from "../../assets/Bags/Piqué Textured Wash Bag/AnyConv.com__L2262_102_5.jpg";
+import piqueTexturedWashBag1 from "../../assets/Bags/Pique Textured Wash Bag/AnyConv.com__L2262_102_1.jpg";
+import piqueTexturedWashBag2 from "../../assets/Bags/Pique Textured Wash Bag/AnyConv.com__L2262_102_2.jpg";
+import piqueTexturedWashBag3 from "../../assets/Bags/Pique Textured Wash Bag/AnyConv.com__L2262_102_5.jpg";
 
 import tonalTapeTricotCrossbodyBag1 from "../../assets/Bags/Tonal Tape Tricot Crossbody Bag/AnyConv.com__L3236_102_1.jpg";
 import tonalTapeTricotCrossbodyBag2 from "../../assets/Bags/Tonal Tape Tricot Crossbody Bag/AnyConv.com__L3236_102_2.jpg";
@@ -389,11 +389,11 @@ const SHOP_DATA = [
     products: [
       {
         id: 18,
-        name: "Piqué Textured Wash Bag",
+        name: "Pique Textured Wash Bag",
         imageUrl: [
-          { picture: `${piquéTexturedWashBag1}` },
-          { picture: `${piquéTexturedWashBag2}` },
-          { picture: `${piquéTexturedWashBag3}` },
+          { picture: `${piqueTexturedWashBag1}` },
+          { picture: `${piqueTexturedWashBag2}` },
+          { picture: `${piqueTexturedWashBag3}` },
         ],
         routeName: "polos",
         price: 185,
