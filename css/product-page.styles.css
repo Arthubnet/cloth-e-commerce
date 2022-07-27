@@ -10,7 +10,7 @@
 .product-page .prevPage-btn {
   position: fixed;
   left: 3rem;
-  bottom: 3rem;
+  bottom: 2rem;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -23,6 +23,11 @@
           align-items: center;
   cursor: pointer;
   padding: 0.5rem 1.5rem;
+}
+
+.product-page .prevPage-btn img {
+  width: 17px;
+  height: 17px;
 }
 
 .product-page .prevPage-btn:hover {
@@ -45,7 +50,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 
 .product-page__container .product-page__pictures {
