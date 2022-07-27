@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import CustomButton from "../custom-button/CustomButton";
 import "./collection-item.styles.scss";
 /* redux */
@@ -6,7 +6,11 @@ import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.actions";
 import { Link, useLocation } from "react-router-dom";
 
+/* Framer Motion */
+import { motion, AnimatePresence } from "framer-motion";
+
 const CollectionItem = ({ addItem, item }) => {
+  let [count, setCount] = useState(0);
   const { imageUrl, name, price, size } = item;
   let itemsLocation = useLocation().pathname;
 
@@ -17,20 +21,21 @@ const CollectionItem = ({ addItem, item }) => {
   }
   let linkFromShop = item.routeName + "/" + name;
 
+  console.log(imageUrl);
+
   return (
     <>
       <div className={`${size ? "big" : ""} collection-item`}>
         <div className="image">
           <Link to={`${counter < 2 ? linkFromShop : name}`}>
-            <img
-              src={imageUrl
-                .filter((image, i) => i < 1)
-                .map((item) => {
-                  return item.picture;
-                })}
-              loading="lazy"
-              alt={name}
-            />
+            <AnimatePresence>
+              <motion.img
+                key={count}
+                src={`${imageUrl[count].picture}`}
+                loading="lazy"
+                alt={name}
+              />
+            </AnimatePresence>
           </Link>
           <CustomButton onClick={() => addItem(item)} inverted>
             Add to cart

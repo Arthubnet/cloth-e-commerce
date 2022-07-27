@@ -451,7 +451,7 @@ const SHOP_DATA = [
       {
         id: 1,
         name: "Beret",
-        imageUrl: [{ picture: `${beret1}` }, { picture: `${beret2}` }, 2],
+        imageUrl: [{ picture: `${beret1}` }, { picture: `${beret2}` }],
         routeName: "polos",
         price: 60,
       },

@@ -82,9 +82,9 @@ function ProductPage({ collections }) {
                   <AnimatePresence>
                     <motion.img
                       src={`${productsImages.imageUrl[count].picture}`}
-                      initial={{ x: 300, opacity: 0 }}
-                      animate={{ x: 0, opacity: 1 }}
-                      exit={{ x: -300, opacity: 0 }}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
                       transition={{ type: "tween" }}
                       alt="promo"
                       key={count}
