@@ -16,9 +16,7 @@
     &:hover {
       background-color: rgba(246, 246, 246, 0.5);
     }
-    svg {
-      transform: rotate(180deg);
-    }
+
     h4 {
       font-weight: 300;
       margin: 0;
@@ -27,13 +25,16 @@
     }
   }
   &__container {
+    width: 1200px;
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
-    gap: 3rem;
+    justify-content: center;
+
     margin-top: 10vh;
     .product-page__pictures {
+      width: 500px;
       position: relative;
+      margin: 0 auto;
       .pagination {
         font-weight: 300;
       }
@@ -60,10 +61,11 @@
       }
     }
     .product-page__description {
-      width: 40rem;
+      width: 550px;
       align-self: center;
 
       p {
+        width: 100%;
         padding: 1.5rem 0;
       }
       .price {

@@ -12,7 +12,7 @@ import {
   useParams,
   useLocation,
 } from "react-router-dom";
-import { ReactComponent as PathArrow } from "../../assets/arrow-.svg";
+import pathArrow from "../../assets/arrow-.svg";
 
 /* Framer */
 import { motion, AnimatePresence } from "framer-motion";
@@ -69,8 +69,12 @@ function ProductPage({ collections }) {
               className="prevPage-btn"
               onClick={() => navigate(previousPage)}
             >
-              <PathArrow />
-              <h4>{`back to ${previousPage.slice(6)}`}</h4>
+              <motion.img
+                initial={{ rotate: 180 }}
+                whileHover={{ x: -4 }}
+                src={pathArrow}
+              />
+              <h4>{`Back to ${previousPage.slice(6)}`}</h4>
             </button>
             <div className="product-page__container">
               <div className="product-page__pictures">
