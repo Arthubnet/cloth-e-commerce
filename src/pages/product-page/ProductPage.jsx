@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import "./product-page.styles.scss";
 import CustomButton from "./../../components/custom-button/CustomButton";
-
+import CarouselArrow from "./../../components/CarouselArrow";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCollections } from "./../../redux/shop/shop.selector";
@@ -12,11 +12,7 @@ import {
   useParams,
   useLocation,
 } from "react-router-dom";
-
-import CarouselArrow from "./../../components/CarouselArrow";
-import m3600_1 from "../../assets/Polos/M3600/AnyConv.com__M3600_L13_1.jpg";
-import m3600_2 from "../../assets/Polos/M3600/AnyConv.com__M3600_L13_2.jpg";
-import m3600_3 from "../../assets/Polos/M3600/AnyConv.com__M3600_L13_3.jpg";
+import { ReactComponent as PathArrow } from "../../assets/arrow-.svg";
 
 /* Framer */
 import { motion, AnimatePresence } from "framer-motion";
@@ -29,12 +25,6 @@ function ProductPage({ collections }) {
     0,
     useLocation().pathname.lastIndexOf("/")
   );
-
-  let images = [
-    { picture: m3600_1 },
-    { picture: m3600_2 },
-    { picture: m3600_3 },
-  ];
 
   //finding the right product
   let productsImages = [];
@@ -79,6 +69,7 @@ function ProductPage({ collections }) {
               className="prevPage-btn"
               onClick={() => navigate(previousPage)}
             >
+              <PathArrow />
               <h4>{`back to ${previousPage.slice(6)}`}</h4>
             </button>
             <div className="product-page__container">

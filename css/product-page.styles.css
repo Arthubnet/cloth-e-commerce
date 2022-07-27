@@ -8,9 +8,37 @@
 }
 
 .product-page .prevPage-btn {
-  position: absolute;
-  top: calc(8vh + 2rem);
+  position: fixed;
   left: 3rem;
+  bottom: 3rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+}
+
+.product-page .prevPage-btn:hover {
+  background-color: rgba(246, 246, 246, 0.5);
+}
+
+.product-page .prevPage-btn svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.product-page .prevPage-btn h4 {
+  font-weight: 300;
+  margin: 0;
+  padding-left: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .product-page__container {
