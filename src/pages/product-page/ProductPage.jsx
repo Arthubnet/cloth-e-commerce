@@ -103,17 +103,9 @@ function ProductPage({ collections }) {
                 </p>
               </div>
               <div className="product-page__description">
-                <h2>${productsImages.name}</h2>
+                <h2>{productsImages.name}</h2>
                 <h2 className="price">${productsImages.price}</h2>
-                <p>
-                  {`A crew neck sweatshirt in cotton-blend loopback. Designed with rib
-          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
-          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
-          training sessions, the cotton sweatshirt is a sportswear classic. Ours
-          features subtle Fred Perry design details, with twin tipping at the
-          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
-          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`}
-                </p>
+                <p>{productsImages.description}</p>
                 <CustomButton>Add to cart</CustomButton>
               </div>
             </div>

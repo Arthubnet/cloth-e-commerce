@@ -21,7 +21,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 92vh;
   gap: 3rem;
   margin-top: 10vh;
 }
