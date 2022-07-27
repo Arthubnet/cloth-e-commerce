@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./product-page.styles.scss";
 import CustomButton from "./../../components/custom-button/CustomButton";
 import CarouselArrow from "./../../components/CarouselArrow";
+/* Redux */
 import { connect } from "react-redux";
+import { addItem } from "../../redux/cart/cart.actions";
 import { createStructuredSelector } from "reselect";
 import { selectCollections } from "./../../redux/shop/shop.selector";
 import {
@@ -12,12 +14,12 @@ import {
   useParams,
   useLocation,
 } from "react-router-dom";
-import pathArrow from "../../assets/arrow-.svg";
+import pathArrow from "../../assets/arrow-left.svg";
 
 /* Framer */
 import { motion, AnimatePresence } from "framer-motion";
 
-function ProductPage({ collections }) {
+function ProductPage({ collections, addItem }) {
   let { product } = useParams();
   let navigate = useNavigate();
   let [count, setCount] = useState(0);
@@ -39,7 +41,6 @@ function ProductPage({ collections }) {
   });
 
   /* Arrow functions */
-
   let nextPic = () => {
     if (count == productsImages.imageUrl.length - 1) {
       setCount((count = 0));
@@ -69,11 +70,7 @@ function ProductPage({ collections }) {
               className="prevPage-btn"
               onClick={() => navigate(previousPage)}
             >
-              <motion.img
-                initial={{ rotate: 180 }}
-                whileHover={{ x: -4 }}
-                src={pathArrow}
-              />
+              <motion.img whileHover={{ x: -4 }} animate={{}} src={pathArrow} />
               <h4>{`Back to ${previousPage.slice(6)}`}</h4>
             </button>
             <div className="product-page__container">
@@ -98,10 +95,12 @@ function ProductPage({ collections }) {
                 </p>
               </div>
               <div className="product-page__description">
-                <h2>{productsImages.name}</h2>
+                <h1>{productsImages.name}</h1>
                 <h2 className="price">${productsImages.price}</h2>
                 <p>{productsImages.description}</p>
-                <CustomButton>Add to cart</CustomButton>
+                <CustomButton onClick={() => addItem(productsImages)}>
+                  Add to cart
+                </CustomButton>
               </div>
             </div>
           </section>
@@ -115,4 +114,8 @@ const mapPropsToState = createStructuredSelector({
   collections: selectCollections,
 });
 
-export default connect(mapPropsToState)(ProductPage);
+const mapDispathtoProps = (dispath) => ({
+  addItem: (item) => dispath(addItem(item)),
+});
+
+export default connect(mapPropsToState, mapDispathtoProps)(ProductPage);
