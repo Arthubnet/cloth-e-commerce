@@ -103,8 +103,8 @@ function ProductPage({ collections }) {
                 </p>
               </div>
               <div className="product-page__description">
-                <h2>Black Shoes</h2>
-                <h2 className="price">$120</h2>
+                <h2>${productsImages.name}</h2>
+                <h2 className="price">${productsImages.price}</h2>
                 <p>
                   {`A crew neck sweatshirt in cotton-blend loopback. Designed with rib
           trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
