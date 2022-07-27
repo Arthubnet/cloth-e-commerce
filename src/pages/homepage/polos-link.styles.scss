@@ -1,0 +1,47 @@
+.polos-container {
+  width: 100%;
+  height: 40vh;
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets/polo_background.jpg");
+  background-attachment: fixed;
+  /*  background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  .content {
+    text-align: center;
+
+    h3 {
+      margin: 0;
+      color: white;
+      font-weight: 300;
+    }
+    h1 {
+      margin: 0.2rem 0 2.5rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    button {
+      height: 40px;
+      padding: 0 20px;
+      display: flex;
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      border: 1px solid black;
+      background-color: white;
+      font-size: 14px;
+      cursor: pointer;
+      &:hover {
+        background-color: black;
+        color: white;
+        border: none;
+      }
+    }
+  }
+}

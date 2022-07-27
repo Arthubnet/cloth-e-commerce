@@ -15,6 +15,7 @@ import { auth, createUserDoc } from "./firebase/firebase.utils";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 import ProductPage from "./pages/product-page/ProductPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 class App extends React.Component {
   componentDidMount() {
@@ -30,14 +31,16 @@ class App extends React.Component {
       <div className="App">
         <Router>
           <Header />
-          <Routes>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/shop/*" element={<ShopPage />} />
-            <Route path="/checkout" element={<CheckoutPage />} />
-            {/* prettier-ignore */}
-            <Route path="/signin" element={this.props.currentUser ? <Homepage/> : <SignInAndSignUpPage/>} />
-            <Route path="*" element={<Error />} />
-          </Routes>
+          <ScrollToTop>
+            <Routes>
+              <Route path="/" element={<Homepage />} />
+              <Route path="/shop/*" element={<ShopPage />} />
+              <Route path="/checkout" element={<CheckoutPage />} />
+              {/* prettier-ignore */}
+              <Route path="/signin" element={this.props.currentUser ? <Homepage/> : <SignInAndSignUpPage/>} />
+              <Route path="*" element={<Error />} />
+            </Routes>
+          </ScrollToTop>
         </Router>
       </div>
     );

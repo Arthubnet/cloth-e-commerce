@@ -60,8 +60,6 @@ function ProductPage({ collections }) {
     }
   };
 
-  console.log(productsImages.imageUrl[0].picture);
-
   return (
     <Routes>
       <Route

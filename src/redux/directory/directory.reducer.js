@@ -1,11 +1,15 @@
-/* import sweatshirtsPreview from "../../assets/MiConv.com__M7535_184_1.jpg";
-import dressesPreview from "../../assets/Dresses/Boxy Pique Shirt/G4139_102_1.jpg"; */
+import sweatshirtsPreview from "../../assets/MiConv.com__M7535_184_2.jpg";
+import dressesPreview from "../../assets/Dresses/Boxy Pique Shirt/G4139_102_1.jpg";
+
+import manHero from "../../assets/3470843287.jpg";
+import womenHero from "../../assets/AnyConv.com__D3169_102_2.jpg";
+import heroImage from "../../assets/sweatshirt.jpg";
 
 let INITIAL_STATE = {
   sections: [
     {
       title: "Sharp",
-      imageUrl: "https://i.ibb.co/1nXTYmY/FP-Q2-MW-Sharp-hp-4-5-1.jpg",
+      imageUrl: sweatshirtsPreview,
       size: "large",
       id: 4,
       linkUrl: "shop/sweatshirts",
@@ -14,7 +18,7 @@ let INITIAL_STATE = {
     },
     {
       title: "New Releases",
-      imageUrl: "https://i.ibb.co/QKGJKnP/FP-Q2-HP-Womens-4-5-1.jpg",
+      imageUrl: womenHero,
       size: "large",
       id: 5,
       linkUrl: "shop/dresses",

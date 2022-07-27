@@ -20,9 +20,7 @@ const CollectionItem = ({ addItem, item }) => {
     if (itemsLocation.charAt(i) == "/") counter++;
   }
   let linkFromShop = item.routeName + "/" + name;
-
-  console.log(imageUrl);
-
+  console.log(imageUrl[count].picture);
   return (
     <>
       <div className={`${size ? "big" : ""} collection-item`}>
@@ -30,6 +28,11 @@ const CollectionItem = ({ addItem, item }) => {
           <Link to={`${counter < 2 ? linkFromShop : name}`}>
             <AnimatePresence>
               <motion.img
+                whileHover={() => setCount(1)}
+                onHoverEnd={() => setCount(0)}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
                 key={count}
                 src={`${imageUrl[count].picture}`}
                 loading="lazy"

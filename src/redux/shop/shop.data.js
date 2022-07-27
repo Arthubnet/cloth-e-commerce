@@ -52,7 +52,7 @@ import b721Two from "../../assets/Shoes/B721/B4290_254_5.jpg";
 import b721Three from "../../assets/Shoes/B721/B4290_254_6.jpg";
 
 import hughesLow1 from "../../assets/Shoes/Hughes Low/B4365_760_1.jpg";
-import hughesLow2 from "../../assets/Shoes/Hughes Low/B4365_760_1.jpg";
+import hughesLow2 from "../../assets/Shoes/Hughes Low/B4365_760_2.jpg";
 
 import leatherMonkeyBoots1 from "../../assets/Shoes/Leather Monkey Boots/SB5372_158_1.jpg";
 import leatherMonkeyBoots2 from "../../assets/Shoes/Leather Monkey Boots/SB5372_158_2.jpg";

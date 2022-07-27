@@ -1,0 +1,65 @@
+.polos-container {
+  width: 100%;
+  height: 40vh;
+  margin: 5% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../../assets/polo_background.jpg");
+  background-attachment: fixed;
+  /*  background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.polos-container .content {
+  text-align: center;
+}
+
+.polos-container .content h3 {
+  margin: 0;
+  color: white;
+  font-weight: 300;
+}
+
+.polos-container .content h1 {
+  margin: 0.2rem 0 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.polos-container .content button {
+  height: 40px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.polos-container .content button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
