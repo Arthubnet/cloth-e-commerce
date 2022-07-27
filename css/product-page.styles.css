@@ -30,6 +30,10 @@
   position: relative;
 }
 
+.product-page__container .product-page__pictures .pagination {
+  font-weight: 300;
+}
+
 .product-page__container .product-page__pictures-inner {
   font-size: 0;
   position: relative;
@@ -63,4 +67,9 @@
 
 .product-page__container .product-page__description p {
   padding: 1.5rem 0;
+}
+
+.product-page__container .product-page__description .price {
+  font-weight: 300;
+  font-size: 1.3rem;
 }

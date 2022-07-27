@@ -20,7 +20,7 @@ const CollectionItem = ({ addItem, item }) => {
     if (itemsLocation.charAt(i) == "/") counter++;
   }
   let linkFromShop = item.routeName + "/" + name;
-  console.log(imageUrl[count].picture);
+
   return (
     <>
       <div className={`${size ? "big" : ""} collection-item`}>

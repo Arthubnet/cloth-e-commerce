@@ -7,7 +7,7 @@
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: normal;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +30,7 @@
 
 .custom-button.google-sign-in:hover {
   background-color: #357ae8;
-  border: none;
+  border: 1px solid transparent;
 }
 
 .custom-button.inverted {
@@ -42,7 +42,7 @@
 .custom-button.inverted:hover {
   background-color: black;
   color: white;
-  border: none;
+  border: 1px solid transparent;
 }
 
 @media all and (max-width: 450px) {

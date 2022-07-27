@@ -7,7 +7,7 @@
   text-transform: uppercase;
   font-family: "Open Sans Condensed";
   font-weight: normal;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -24,7 +24,7 @@
 
     &:hover {
       background-color: #357ae8;
-      border: none;
+      border: 1px solid transparent;
     }
   }
 
@@ -36,7 +36,7 @@
     &:hover {
       background-color: black;
       color: white;
-      border: none;
+      border: 1px solid transparent;
     }
   }
 }

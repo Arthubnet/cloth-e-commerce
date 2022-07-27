@@ -130,61 +130,96 @@ const SHOP_DATA = [
     routeName: "polos",
     products: [
       {
-        id: 32,
+        id: 10,
         name: "M3600",
+        price: 125,
+        routeName: "polos",
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${m3600_1}` },
           { picture: `${m3600_2}` },
           { picture: `${m3600_3}` },
         ],
-        price: 125,
-        routeName: "polos",
       },
       {
-        id: 30,
+        id: 11,
         name: "G3600",
         price: 140,
+        routeName: "polos",
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+        trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+        / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+        training sessions, the cotton sweatshirt is a sportswear classic. Ours
+        features subtle Fred Perry design details, with twin tipping at the
+        cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+        6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${g3600_1}` },
           { picture: `${g3600_2}` },
           { picture: `${g3600_3}` },
           { picture: `${g3600_4}` },
         ],
-        routeName: "polos",
       },
       {
-        id: 31,
+        id: 12,
         name: "M12",
+        routeName: "polos",
+        price: 120,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+        trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+        / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+        training sessions, the cotton sweatshirt is a sportswear classic. Ours
+        features subtle Fred Perry design details, with twin tipping at the
+        cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+        6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${m12_1}` },
           { picture: `${m12_2}` },
           { picture: `${m12_3}` },
         ],
-        routeName: "polos",
-        price: 120,
       },
 
       {
-        id: 33,
+        id: 13,
         name: "Medal Stripe Polo Shirt",
+        routeName: "polos",
+        price: 125,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+        trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+        / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+        training sessions, the cotton sweatshirt is a sportswear classic. Ours
+        features subtle Fred Perry design details, with twin tipping at the
+        cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+        6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${medalStripePoloShirt1}` },
           { picture: `${medalStripePoloShirt2}` },
           { picture: `${medalStripePoloShirt3}` },
         ],
-        routeName: "polos",
-        price: 125,
       },
       {
-        id: 34,
+        id: 14,
         name: "Towelling Panel Polo Shirt",
+        routeName: "polos",
+        price: 120,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+        trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+        / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+        training sessions, the cotton sweatshirt is a sportswear classic. Ours
+        features subtle Fred Perry design details, with twin tipping at the
+        cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+        6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${towellingPanelPoloShirt1}` },
           { picture: `${towellingPanelPoloShirt2}` },
           { picture: `${towellingPanelPoloShirt3}` },
         ],
-        routeName: "polos",
-        price: 120,
       },
     ],
   },
@@ -194,60 +229,95 @@ const SHOP_DATA = [
     routeName: "sweatshirts",
     products: [
       {
-        id: 33,
+        id: 20,
         name: "Printed Colour Block Sweatshirt",
+        routeName: "sweatshirts",
+        price: 125,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+        trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+        / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+        training sessions, the cotton sweatshirt is a sportswear classic. Ours
+        features subtle Fred Perry design details, with twin tipping at the
+        cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+        6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${colourBlockSweatshirt1}` },
           { picture: `${colourBlockSweatshirt2}` },
           { picture: `${colourBlockSweatshirt3}` },
         ],
-        routeName: "polos",
-        price: 125,
       },
       {
-        id: 30,
+        id: 21,
         name: "Colour Block Half Zip Sweatshirt",
         price: 140,
+        routeName: "sweatshirts",
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${halfZipSweatshirt1}` },
           { picture: `${halfZipSweatshirt2}` },
           { picture: `${halfZipSweatshirt3}` },
         ],
-        routeName: "polos",
       },
       {
-        id: 31,
+        id: 22,
         name: "Colour Block Sweatshirt",
+        routeName: "sweatshirts",
+        price: 120,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${blocksweatshirt1}` },
           { picture: `${blocksweatshirt2}` },
           { picture: `${blocksweatshirt3}` },
         ],
-        routeName: "polos",
-        price: 120,
       },
       {
-        id: 32,
+        id: 23,
         name: "Crew Neck Sweatshirt",
+        routeName: "sweatshirts",
+        price: 125,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${crewNeck1}` },
           { picture: `${crewNeck2}` },
           { picture: `${crewNeck3}` },
         ],
-        routeName: "polos",
-        price: 125,
       },
 
       {
-        id: 34,
+        id: 24,
         name: "Taped Sleeve Sweatshirt",
+        routeName: "sweatshirts",
+        price: 120,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${tapedSleeveSweatshirt1}` },
           { picture: `${tapedSleeveSweatshirt2}` },
           { picture: `${tapedSleeveSweatshirt3}` },
         ],
-        routeName: "polos",
-        price: 120,
       },
     ],
   },
@@ -258,72 +328,113 @@ const SHOP_DATA = [
     routeName: "dresses",
     products: [
       {
-        id: 24,
+        id: 30,
         name: "Boxy Pique Shirt",
+        routeName: "dresses",
+        price: 200,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${boxyPiqueShirt1}` },
           { picture: `${boxyPiqueShirt2}` },
           { picture: `${boxyPiqueShirt3}` },
         ],
-        routeName: "polos",
-        price: 200,
       },
       {
-        id: 25,
+        id: 31,
         name: "Longline Cardigan",
+        routeName: "dresses",
+        price: 280,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${longlineCardigan1}` },
           { picture: `${longlineCardigan2}` },
           { picture: `${longlineCardigan3}` },
         ],
-        routeName: "polos",
-        price: 280,
       },
       {
-        id: 23,
+        id: 32,
         name: "Bowling Shirt Dress",
+        routeName: "dresses",
+        price: 250,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${bowlingShirtDress1}` },
           { picture: `${bowlingShirtDress2}` },
           { picture: `${bowlingShirtDress3}` },
         ],
-        routeName: "polos",
-        price: 250,
       },
 
       {
-        id: 27,
+        id: 33,
         name: "Printed Collar Pique Dress",
+        routeName: "dresses",
+        price: 135,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${printedCollarPiqueDress1}` },
           { picture: `${printedCollarPiqueDress2}` },
           { picture: `${printedCollarPiqueDress3}` },
         ],
-        routeName: "polos",
-        price: 135,
       },
       {
-        id: 29,
+        id: 34,
         name: "Tartan Panel Cable Knit Jumper",
+        routeName: "dresses",
+        price: 200,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${tartanPanelCableKnitJumper1}` },
           { picture: `${tartanPanelCableKnitJumper2}` },
           { picture: `${tartanPanelCableKnitJumper3}` },
         ],
-        routeName: "polos",
-        price: 200,
       },
       {
-        id: 28,
+        id: 35,
         name: "Shirt Dress",
-
+        routeName: "dresses",
+        price: 135,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${shirtDress1}` },
           { picture: `${shirtDress2}` },
           { picture: `${shirtDress3}` },
         ],
-        routeName: "polos",
-        price: 135,
       },
     ],
   },
@@ -334,50 +445,85 @@ const SHOP_DATA = [
     routeName: "shoes",
     products: [
       {
-        id: 10,
+        id: 40,
         name: "B721",
+        routeName: "shoes",
+        price: 120,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${b721One}` },
           { picture: `${b721Two}` },
           { picture: `${b721Three}` },
         ],
-        routeName: "polos",
-        price: 120,
       },
 
       {
-        id: 11,
+        id: 41,
         name: "Leather Monkey Boots",
+        routeName: "shoes",
+        price: 230,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${leatherMonkeyBoots1}` },
           { picture: `${leatherMonkeyBoots2}` },
         ],
-        routeName: "polos",
-        price: 230,
       },
       {
-        id: 12,
+        id: 42,
         name: "Hughes Low",
-        imageUrl: [{ picture: `${hughesLow1}` }, { picture: `${hughesLow2}` }],
-        routeName: "polos",
+        routeName: "shoes",
         price: 130,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
+        imageUrl: [{ picture: `${hughesLow1}` }, { picture: `${hughesLow2}` }],
       },
       {
-        id: 13,
+        id: 43,
         name: "Linden",
-        imageUrl: [{ picture: `${linden1}` }, { picture: `${linden2}` }],
-        routeName: "polos",
+        routeName: "shoes",
         price: 140,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
+        imageUrl: [{ picture: `${linden1}` }, { picture: `${linden2}` }],
       },
       {
-        id: 14,
+        id: 44,
         name: "Tassel Loafer",
+        routeName: "shoes",
+        price: 120,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${tasseLoafer1}` },
           { picture: `${tasseLoafer2}` },
         ],
-        routeName: "polos",
-        price: 120,
       },
     ],
   },
@@ -388,57 +534,92 @@ const SHOP_DATA = [
     routeName: "bags",
     products: [
       {
-        id: 18,
+        id: 50,
         name: "Pique Textured Wash Bag",
+        routeName: "bags",
+        price: 185,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${piqueTexturedWashBag1}` },
           { picture: `${piqueTexturedWashBag2}` },
           { picture: `${piqueTexturedWashBag3}` },
         ],
-        routeName: "polos",
-        price: 185,
       },
       {
-        id: 19,
+        id: 51,
         name: "Classic Barrel Bag",
+        routeName: "bags",
+        price: 75,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${classicBarrelBag1}` },
           { picture: `${classicBarrelBag2}` },
           { picture: `${classicBarrelBag3}` },
         ],
-        routeName: "polos",
-        price: 75,
       },
       {
-        id: 20,
+        id: 52,
         name: "Contrast Ripstop Backpack",
+        routeName: "bags",
+        price: 100,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${contrastRipstopBackpack1}` },
           { picture: `${contrastRipstopBackpack2}` },
         ],
-        routeName: "polos",
-        price: 100,
       },
       {
-        id: 21,
+        id: 53,
         name: "Tonal Tape Tricot Crossbody Bag",
+        routeName: "bags",
+        price: 55,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${tonalTapeTricotCrossbodyBag1}` },
           { picture: `${tonalTapeTricotCrossbodyBag2}` },
           { picture: `${tonalTapeTricotCrossbodyBag3}` },
         ],
-        routeName: "polos",
-        price: 55,
       },
       {
-        id: 22,
+        id: 54,
         name: "Burnished Leather Pouch",
+        routeName: "bags",
+        price: 70,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${burnishedLeatherPouch1}` },
           { picture: `${burnishedLeatherPouch2}` },
         ],
-        routeName: "polos",
-        price: 70,
       },
     ],
   },
@@ -449,51 +630,86 @@ const SHOP_DATA = [
     routeName: "caps",
     products: [
       {
-        id: 1,
+        id: 61,
         name: "Beret",
-        imageUrl: [{ picture: `${beret1}` }, { picture: `${beret2}` }],
-        routeName: "polos",
+        routeName: "caps",
         price: 60,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
+        imageUrl: [{ picture: `${beret1}` }, { picture: `${beret2}` }],
       },
       {
-        id: 2,
+        id: 62,
         name: "Classic Pique Cap",
+        routeName: "caps",
+        price: 70,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${classicPiqueCap1}` },
           { picture: `${classicPiqueCap2}` },
         ],
-        routeName: "polos",
-        price: 70,
       },
       {
-        id: 4,
+        id: 63,
         name: "Graphic Print Bucket Hat",
+        routeName: "caps",
+        price: 65,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${graphicPrintBucketHat1}` },
           { picture: `${graphicPrintBucketHat2}` },
         ],
-        routeName: "polos",
-        price: 65,
       },
       {
-        id: 5,
+        id: 64,
         name: "Microfibre Cap",
+        routeName: "caps",
+        price: 45,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${microfibreCap1}` },
           { picture: `${microfibreCap2}` },
         ],
-        routeName: "polos",
-        price: 45,
       },
       {
-        id: 3,
+        id: 65,
         name: "Branded Twill Cap",
+        routeName: "caps",
+        price: 60,
+        description: `A crew neck sweatshirt in cotton-blend loopback. Designed with rib
+          trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
+          / Rib trims / Twin tipped cuffs Adopted by sports-players in winter
+          training sessions, the cotton sweatshirt is a sportswear classic. Ours
+          features subtle Fred Perry design details, with twin tipping at the
+          cuffs. 79% Cotton / 21% Polyester Machine Wash Model's height: 186cm /
+          6.1' Model wears: M Style M7535 Colour Navy. Also test is here`,
         imageUrl: [
           { picture: `${brandedTwillCap1}` },
           { picture: `${brandedTwillCap2}` },
         ],
-        routeName: "polos",
-        price: 60,
       },
     ],
   },

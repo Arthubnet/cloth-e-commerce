@@ -15,6 +15,9 @@
     margin-top: 10vh;
     .product-page__pictures {
       position: relative;
+      .pagination {
+        font-weight: 300;
+      }
       &-inner {
         font-size: 0;
         position: relative;
@@ -40,8 +43,13 @@
     .product-page__description {
       width: 40rem;
       align-self: center;
+
       p {
         padding: 1.5rem 0;
+      }
+      .price {
+        font-weight: 300;
+        font-size: 1.3rem;
       }
     }
   }

@@ -14,6 +14,9 @@ import {
 } from "react-router-dom";
 
 import CarouselArrow from "./../../components/CarouselArrow";
+import m3600_1 from "../../assets/Polos/M3600/AnyConv.com__M3600_L13_1.jpg";
+import m3600_2 from "../../assets/Polos/M3600/AnyConv.com__M3600_L13_2.jpg";
+import m3600_3 from "../../assets/Polos/M3600/AnyConv.com__M3600_L13_3.jpg";
 
 /* Framer */
 import { motion, AnimatePresence } from "framer-motion";
@@ -26,6 +29,12 @@ function ProductPage({ collections }) {
     0,
     useLocation().pathname.lastIndexOf("/")
   );
+
+  let images = [
+    { picture: m3600_1 },
+    { picture: m3600_2 },
+    { picture: m3600_3 },
+  ];
 
   //finding the right product
   let productsImages = [];
@@ -89,13 +98,13 @@ function ProductPage({ collections }) {
                     />
                   </AnimatePresence>
                 </div>
-                <p>
+                <p className="pagination">
                   {count + 1} / {productsImages.imageUrl.length}
                 </p>
               </div>
               <div className="product-page__description">
                 <h2>Black Shoes</h2>
-                <h3>$120</h3>
+                <h2 className="price">$120</h2>
                 <p>
                   {`A crew neck sweatshirt in cotton-blend loopback. Designed with rib
           trims and twin tipped cuffs. Loopback cotton-blend sweat / Regular fit
