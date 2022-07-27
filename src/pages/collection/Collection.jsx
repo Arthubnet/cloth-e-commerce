@@ -10,7 +10,7 @@ import { selectCollections } from "../../redux/shop/shop.selector";
 import { createStructuredSelector } from "reselect";
 import ProductPage from "./../product-page/ProductPage";
 
-const CollectionPage = ({ collections, shopLocation }) => {
+const CollectionPage = ({ collections }) => {
   let { collectionPage } = useParams();
   let collection = collections.filter(
     (item) => item.routeName === collectionPage

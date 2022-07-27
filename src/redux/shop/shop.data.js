@@ -303,6 +303,17 @@ const SHOP_DATA = [
         price: 135,
       },
       {
+        id: 29,
+        name: "Tartan Panel Cable Knit Jumper",
+        imageUrl: [
+          { picture: `${tartanPanelCableKnitJumper1}` },
+          { picture: `${tartanPanelCableKnitJumper2}` },
+          { picture: `${tartanPanelCableKnitJumper3}` },
+        ],
+        routeName: "polos",
+        price: 200,
+      },
+      {
         id: 28,
         name: "Shirt Dress",
 
@@ -313,17 +324,6 @@ const SHOP_DATA = [
         ],
         routeName: "polos",
         price: 135,
-      },
-      {
-        id: 29,
-        name: "Tartan Panel Cable Knit Jumper",
-        imageUrl: [
-          { picture: `${tartanPanelCableKnitJumper1}` },
-          { picture: `${tartanPanelCableKnitJumper2}` },
-          { picture: `${tartanPanelCableKnitJumper3}` },
-        ],
-        routeName: "polos",
-        price: 200,
       },
     ],
   },

@@ -7,6 +7,7 @@ function StripeCheckoutButton({ price }) {
   const publishableKey = `${process.env.REACT_APP_STRIPE}`;
   let onToken = (token) => {
     alert("Payment Successful");
+    console.log(token);
   };
   return (
     <StripeCheckout

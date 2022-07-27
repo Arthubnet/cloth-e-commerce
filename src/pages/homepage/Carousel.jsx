@@ -22,7 +22,7 @@ function Carousel({ carouselImages }) {
   console.log();
   return (
     <div className="carousel">
-      <CarouselArrow setMoveImage={setMoveImage} left="left" />
+      {/*  <CarouselArrow setMoveImage={setMoveImage} left="left" />
       <CarouselArrow setMoveImage={setMoveImage} />
       <motion.div
         className="carousel__inner"
@@ -40,7 +40,7 @@ function Carousel({ carouselImages }) {
             ></img>
           </Link>
         ))}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }
