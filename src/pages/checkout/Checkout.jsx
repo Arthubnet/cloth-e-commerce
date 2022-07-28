@@ -10,8 +10,15 @@ import {
 } from "../../redux/cart/cart.selectors";
 import StripeCheckoutButton from "../../components/stripe/StripeButton";
 
+import { motion } from "framer-motion";
+
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5 }}
+    className="checkout-page"
+  >
     <div className="checkout-header">
       <div className="header-block">
         <span>Product</span>
@@ -40,7 +47,7 @@ const CheckoutPage = ({ cartItems, total }) => (
       4242 4242 4242 - Exp: 01/23(as long as not expired) - CVV: 123(any)
     </div>
     <StripeCheckoutButton price={total} />
-  </div>
+  </motion.div>
 );
 
 const mapStateToProps = createStructuredSelector({

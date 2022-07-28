@@ -1,18 +1,23 @@
 import React, { useState } from "react";
-import LoadingSpinner from "../../components/loading-spinner/LoadingSpinner.component";
+import "./sign-in-and-sign-out.styles.scss";
 import SignIn from "../../components/sign-in/SignIn";
 import SignUp from "../../components/sign-up/SignUp";
 
-import "./sign-in-and-sign-out.styles.scss";
-
+import LoadingSpinner from "../../components/loading-spinner/LoadingSpinner.component";
+import { motion } from "framer-motion";
 const SignInAndSignUpPage = () => {
   const [loading, setLoading] = useState(false);
   return (
-    <div className="sign-in-and-sign-out">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="sign-in-and-sign-out"
+    >
       <SignIn setLoading={setLoading} />
       <SignUp setLoading={setLoading} />
       {loading ? <LoadingSpinner /> : null}
-    </div>
+    </motion.div>
   );
 };
 
