@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./sign-up.styles.scss";
-
+import SuccessNotification from "../SuccessNotification";
 import CustomButton from "../custom-button/CustomButton";
 import FormInput from "../form-input/FormInput";
 /* Firebase */
@@ -19,17 +19,14 @@ import {
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./../../redux/user/user.actions";
-import { useNavigate } from "react-router-dom";
 
-function SignUp({ setLoading, setCurrentUser }) {
+function SignUp({ setLoading, setCurrentUser, modalActive, setModalActive }) {
   let [signUp, setSignUp] = useState({
     displayName: "",
     email: "",
     password: "",
     confirmPassword: "",
   });
-  let navigate = useNavigate();
-
   let { displayName, password, email, confirmPassword } = signUp;
 
   let handleSubmit = async (event) => {
@@ -52,9 +49,8 @@ function SignUp({ setLoading, setCurrentUser }) {
           let dbUser = await createUserDoc(currentUser);
           setCurrentUser(dbUser);
         });
-        alert("Success! Account created");
+        await setModalActive((modalActive = true));
         /*       await createUserProfileDocument(user, { displayName }); */
-        navigate("/");
         setSignUp({
           displayName: "",
           email: "",

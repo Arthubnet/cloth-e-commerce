@@ -36,7 +36,7 @@ class App extends React.Component {
               <Route path="/shop/*" element={<ShopPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
               {/* prettier-ignore */}
-              <Route path="/signin" element={this.props.currentUser ? <Homepage/> : <SignInAndSignUpPage/>} />
+              <Route path="/signin" element={<SignInAndSignUpPage/>} />
               <Route path="*" element={<Error />} />
             </Routes>
           </ScrollToTop>

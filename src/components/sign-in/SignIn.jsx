@@ -1,6 +1,7 @@
 import React from "react";
 import CustomButton from "../custom-button/CustomButton";
 import FormInput from "../form-input/FormInput";
+import SuccessNotification from "../SuccessNotification";
 import { useState } from "react";
 import "./sign-in.styles.scss";
 /* prettier-ignore */
@@ -18,12 +19,10 @@ import {
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./../../redux/user/user.actions";
-import { useNavigate } from "react-router-dom";
 
 function SignIn({ setLoading, setCurrentUser }) {
   let [signIn, setSignIn] = useState({ email: "", password: "" });
   let { email, password } = signIn;
-  let navigate = useNavigate();
 
   let handleSubmit = async (event) => {
     event.preventDefault();
@@ -34,7 +33,7 @@ function SignIn({ setLoading, setCurrentUser }) {
         let dbUser = await createUserDoc(currentUser);
         setCurrentUser(dbUser);
       });
-      navigate("/");
+
       setSignIn({ email: "", password: "" });
     } catch (error) {
       alert("Check your email or password");
@@ -59,7 +58,6 @@ function SignIn({ setLoading, setCurrentUser }) {
       onAuthStateChanged(auth, async (currentUser) => {
         let dbUser = await createUserDoc(currentUser);
         setCurrentUser(dbUser);
-        navigate("/");
       });
     });
   };
