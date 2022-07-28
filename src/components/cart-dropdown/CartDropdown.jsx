@@ -3,16 +3,13 @@ import CustomButon from "../custom-button/CustomButton";
 
 import "./cart-dropdown.styles.scss";
 import CartItem from "../cart-item/CartItem";
+/* Redux */
 import { connect } from "react-redux";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
 import { useNavigate } from "react-router-dom";
-import { toggleCartHidden } from "../../redux/cart/cart.actions";
-
-import { motion } from "framer-motion";
 
 function CartDropdown({ cartItems }) {
   let navigate = useNavigate();
-
   return (
     <div className="cart-dropdown">
       <div className="cart-items">
@@ -27,7 +24,6 @@ function CartDropdown({ cartItems }) {
       <CustomButon
         onClick={() => {
           navigate("/checkout");
-          toggleCartHidden();
         }}
       >
         CHECKOUT
@@ -40,8 +36,4 @@ let mapStateToProps = (state) => ({
   cartItems: selectCartItems(state),
 });
 
-const mapDispatchToProps = (dispatch) => ({
-  toggleCartHidden: () => dispatch(toggleCartHidden()),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(CartDropdown);
+export default connect(mapStateToProps)(CartDropdown);
