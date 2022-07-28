@@ -5,12 +5,17 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  opacity: 0;
   border: 1px solid rgba(0, 0, 0, 0.3);
   background-color: white;
-  top: 5rem;
-  right: 40px;
+  top: 2.9rem;
+  right: 0;
+  transform: scale(0);
   z-index: 5;
-
+  &[data-isOpen="true"] {
+    opacity: 1;
+    transform: scale(1);
+  }
   .empty-message {
     font-size: 1rem;
     margin: 50px auto;

@@ -19,6 +19,7 @@ import {
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./../../redux/user/user.actions";
+import { useNavigate } from "react-router-dom";
 
 function SignUp({ setLoading, setCurrentUser }) {
   let [signUp, setSignUp] = useState({
@@ -27,6 +28,7 @@ function SignUp({ setLoading, setCurrentUser }) {
     password: "",
     confirmPassword: "",
   });
+  let navigate = useNavigate();
 
   let { displayName, password, email, confirmPassword } = signUp;
 
@@ -52,6 +54,7 @@ function SignUp({ setLoading, setCurrentUser }) {
         });
         alert("Success! Account created");
         /*       await createUserProfileDocument(user, { displayName }); */
+        navigate("/");
         setSignUp({
           displayName: "",
           email: "",

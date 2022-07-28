@@ -8,10 +8,20 @@ import { connect } from "react-redux";
 import { selectCartItems } from "../../redux/cart/cart.selectors";
 import { useNavigate } from "react-router-dom";
 
-function CartDropdown({ cartItems }) {
+/* Framer motion */
+import { motion } from "framer-motion";
+
+function CartDropdown({ cartItems, isOpen }) {
   let navigate = useNavigate();
   return (
-    <div className="cart-dropdown">
+    <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      animate={{
+        opacity: isOpen ? 1 : 0,
+        scale: isOpen ? 1 : 0,
+      }}
+      className="cart-dropdown"
+    >
       <div className="cart-items">
         {cartItems.length ? (
           cartItems.map((cartItem) => (
@@ -28,7 +38,7 @@ function CartDropdown({ cartItems }) {
       >
         CHECKOUT
       </CustomButon>
-    </div>
+    </motion.div>
   );
 }
 

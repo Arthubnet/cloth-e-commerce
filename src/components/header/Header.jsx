@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import "./header.styles.scss";
 import { Link } from "react-router-dom";
 import { auth } from "../../firebase/firebase.utils";
 import CartIcon from "./../cart-icon/CartIcon";
-import CartDropdown from "../cart-dropdown/CartDropdown";
+
 /* Redux */
 import { connect } from "react-redux";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 import { createStructuredSelector } from "reselect";
+
+import { motion } from "framer-motion";
 
 function Header({ currentUser }) {
   let signOut = async () => {
@@ -29,14 +31,14 @@ function Header({ currentUser }) {
       <div className="options">
         <div className="dropdown">
           <button className="dropbtn">CATEGORIES</button>
-          <div className="dropdown-content">
+          <motion.div initial className="dropdown-content">
             <Link to={"/shop/polos"}>Polos</Link>
             <Link to={"/shop/sweatshirts"}>Sweatshirts</Link>
             <Link to={"/shop/dresses"}>Dresses</Link>
             <Link to={"/shop/caps"}>Caps</Link>
             <Link to={"/shop/shoes"}>Shoes</Link>
             <Link to={"/shop/bags"}>Bags</Link>
-          </div>
+          </motion.div>
         </div>
         <Link className="option shop" to={"/shop"}>
           SHOP
@@ -52,7 +54,6 @@ function Header({ currentUser }) {
         )}
         <CartIcon />
       </div>
-      <CartDropdown />
     </div>
   );
 }
