@@ -31,7 +31,7 @@ function Header({ currentUser }) {
       <div className="options">
         <div className="dropdown">
           <button className="dropbtn">CATEGORIES</button>
-          <motion.div initial className="dropdown-content">
+          <motion.div className="dropdown-content">
             <Link to={"/shop/polos"}>Polos</Link>
             <Link to={"/shop/sweatshirts"}>Sweatshirts</Link>
             <Link to={"/shop/dresses"}>Dresses</Link>

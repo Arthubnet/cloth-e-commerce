@@ -65,7 +65,12 @@ function ProductPage({ collections, addItem }) {
       <Route
         path="/"
         element={
-          <section className="product-page">
+          <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="product-page"
+          >
             <button
               className="prevPage-btn"
               onClick={() => navigate(previousPage)}
@@ -103,7 +108,7 @@ function ProductPage({ collections, addItem }) {
                 </CustomButton>
               </div>
             </div>
-          </section>
+          </motion.section>
         }
       />
     </Routes>
