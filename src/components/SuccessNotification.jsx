@@ -15,8 +15,7 @@ function SuccessNotification({ modalActive, setModalActive, currentUser }) {
     setModalActive((modalActive = false));
     navigate("/");
   };
-  console.log(currentUser);
-  console.log(currentUser.displayName);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

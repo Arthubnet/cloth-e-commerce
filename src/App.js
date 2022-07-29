@@ -20,7 +20,6 @@ import { setCurrentUser } from "./redux/user/user.actions";
 class App extends React.Component {
   componentDidMount() {
     const { setCurrentUser } = this.props;
-    console.log("did mount rendered");
     onAuthStateChanged(auth, async (currentUser) => {
       let dbUser = await createUserDoc(currentUser);
       setCurrentUser(dbUser);

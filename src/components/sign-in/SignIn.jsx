@@ -32,7 +32,6 @@ function SignIn({ setLoading, setCurrentUser, setModalActive, modalActive }) {
       let { user } = await signInWithEmailAndPassword(auth, email, password);
       await setCurrentUser(user);
       setLoading(false);
-      console.log("before modal" + user.displayName);
       setModalActive((modalActive = true));
       setSignIn({ email: "", password: "" });
     } catch (error) {
@@ -54,14 +53,9 @@ function SignIn({ setLoading, setCurrentUser, setModalActive, modalActive }) {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
       const user = result.user;
-      await setCurrentUser(user);
       await addCollection(user.displayName, user.email, user.uid);
+      await setCurrentUser(user);
       setModalActive((modalActive = true));
-      /*  onAuthStateChanged(auth, async (currentUser) => {
-        let dbUser = await createUserDoc(currentUser);
-        await setCurrentUser(dbUser);
-        setModalActive((modalActive = true));
-      }); */
     });
   };
 
