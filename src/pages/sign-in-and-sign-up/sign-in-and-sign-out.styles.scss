@@ -1,10 +1,10 @@
 .sign-in-and-sign-out {
-  padding-top: 7%;
   width: 90%;
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin: 30px auto;
+  margin: 5rem auto;
+
   @media all and (max-width: 1200px) {
     flex-direction: column;
     align-items: center;

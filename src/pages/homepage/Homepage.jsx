@@ -1,5 +1,7 @@
 import React from "react";
 import Directory from "../../components/directory/Directory";
+import Footer from "../../components/Footer";
+
 import "./homepage.styles.scss";
 import PolosLink from "./PolosLink";
 import Hero from "./Hero";
@@ -19,6 +21,7 @@ const Homepage = () => {
       <div className="directory">
         <Directory />
       </div>
+      <Footer />
     </motion.div>
   );
 };
