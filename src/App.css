@@ -5,6 +5,7 @@ body {
   padding: 8vh 0 0;
   font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 a {
@@ -19,7 +20,6 @@ a {
 h1 {
   font-size: 1.8rem;
   margin: 10px 0;
-  cursor: pointer;
   font-weight: 700;
   letter-spacing: 0.3px;
   color: black;
