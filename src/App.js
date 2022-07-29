@@ -1,20 +1,21 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-
+/* Components */
 import Homepage from "./pages/homepage/Homepage";
 import Error from "./components/Erorr";
 import ShopPage from "./pages/shop/Shop";
 import Header from "./components/header/Header";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/SignInAndSignUp";
 import CheckoutPage from "./pages/checkout/Checkout";
+import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 /* Firebase */
 import { onAuthStateChanged } from "firebase/auth";
 import { auth, createUserDoc } from "./firebase/firebase.utils";
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
-import ScrollToTop from "./components/ScrollToTop";
 
 class App extends React.Component {
   componentDidMount() {
@@ -42,6 +43,7 @@ class App extends React.Component {
             </Routes>
           </ScrollToTop>
         </Router>
+        <Footer />
       </div>
     );
   }

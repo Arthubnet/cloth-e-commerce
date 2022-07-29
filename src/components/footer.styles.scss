@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  background-color: black;
+  margin-top: 2%;
+  p {
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 3.5vh 0;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

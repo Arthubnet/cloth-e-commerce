@@ -8,21 +8,21 @@ import heroImage from "../../assets/sweatshirt.jpg";
 let INITIAL_STATE = {
   sections: [
     {
-      title: "Sharp",
+      title: "Sweatshirts",
       imageUrl: sweatshirtsPreview,
       size: "large",
       id: 4,
       linkUrl: "shop/sweatshirts",
-      category: "Sweatshirts",
+      /*   category: "Sweatshirts", */
       description: "Sharp styling inspired by the British subcultural uniform",
     },
     {
-      title: "New Releases",
+      title: "Dresses",
       imageUrl: womenHero,
       size: "large",
       id: 5,
       linkUrl: "shop/dresses",
-      category: "Dresses",
+      /*    category: "Dresses", */
       description: "This just in – shop our latest arrivals",
     },
     {
