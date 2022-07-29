@@ -16,11 +16,12 @@ import {
   addCollection,
   createUserDoc,
 } from "../../firebase/firebase.utils";
+
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./../../redux/user/user.actions";
 
-function SignIn({ setLoading, setCurrentUser }) {
+function SignIn({ setLoading, setCurrentUser, setModalActive, modalActive }) {
   let [signIn, setSignIn] = useState({ email: "", password: "" });
   let { email, password } = signIn;
 
@@ -29,17 +30,16 @@ function SignIn({ setLoading, setCurrentUser }) {
     setLoading(true);
     try {
       let { user } = await signInWithEmailAndPassword(auth, email, password);
-      onAuthStateChanged(auth, async (currentUser) => {
-        let dbUser = await createUserDoc(currentUser);
-        setCurrentUser(dbUser);
-      });
-
+      await setCurrentUser(user);
+      setLoading(false);
+      console.log("before modal" + user.displayName);
+      setModalActive((modalActive = true));
       setSignIn({ email: "", password: "" });
     } catch (error) {
+      setLoading(false);
       alert("Check your email or password");
       console.log(error);
     }
-    setLoading(false);
   };
 
   let handleChange = (event) => {
@@ -54,11 +54,14 @@ function SignIn({ setLoading, setCurrentUser }) {
       const credential = GoogleAuthProvider.credentialFromResult(result);
       const token = credential.accessToken;
       const user = result.user;
+      await setCurrentUser(user);
       await addCollection(user.displayName, user.email, user.uid);
-      onAuthStateChanged(auth, async (currentUser) => {
+      setModalActive((modalActive = true));
+      /*  onAuthStateChanged(auth, async (currentUser) => {
         let dbUser = await createUserDoc(currentUser);
-        setCurrentUser(dbUser);
-      });
+        await setCurrentUser(dbUser);
+        setModalActive((modalActive = true));
+      }); */
     });
   };
 

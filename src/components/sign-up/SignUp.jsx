@@ -47,10 +47,10 @@ function SignUp({ setLoading, setCurrentUser, modalActive, setModalActive }) {
         await addCollection(displayName, email, user.uid);
         onAuthStateChanged(auth, async (currentUser) => {
           let dbUser = await createUserDoc(currentUser);
-          setCurrentUser(dbUser);
+          await setCurrentUser(dbUser);
+          setModalActive((modalActive = true));
         });
-        await setModalActive((modalActive = true));
-        /*       await createUserProfileDocument(user, { displayName }); */
+
         setSignUp({
           displayName: "",
           email: "",

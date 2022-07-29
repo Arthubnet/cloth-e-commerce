@@ -1,35 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./success-notification.styles.scss";
-
-import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 /* Redux */
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../redux/user/user.selectors";
 import { connect } from "react-redux";
+/* Framer motion */
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function SuccessNotification({ modalActive, setModalActive, currentUser }) {
   let navigate = useNavigate();
-
   let onSuccessRegistration = () => {
     setModalActive((modalActive = false));
     navigate("/");
   };
+  console.log(currentUser);
+  console.log(currentUser.displayName);
   return (
-    <div className="modal-background">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="modal"
-      >
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="modal-background"
+    >
+      <div className="modal">
         <h2>
-          Welcome, <span>{currentUser.displayName}</span>!
+          Hello, <span>{currentUser.displayName}</span>
         </h2>
-        <p>You account has been created.</p>
+        <p>We are glad to see you, enjoy shoping.</p>
         <button onClick={() => onSuccessRegistration()}>Continue</button>
-      </motion.div>
-    </div>
+      </div>
+    </motion.div>
   );
 }
 

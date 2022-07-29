@@ -19,6 +19,7 @@ import ScrollToTop from "./components/ScrollToTop";
 class App extends React.Component {
   componentDidMount() {
     const { setCurrentUser } = this.props;
+    console.log("did mount rendered");
     onAuthStateChanged(auth, async (currentUser) => {
       let dbUser = await createUserDoc(currentUser);
       setCurrentUser(dbUser);

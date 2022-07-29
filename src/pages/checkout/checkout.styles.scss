@@ -28,9 +28,10 @@
     margin: 50px 0 0 auto;
   }
   .test-warning {
-    text-align: center;
+    align-self: flex-end;
+    text-align: end;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 1rem;
 
     span {
       color: red;
