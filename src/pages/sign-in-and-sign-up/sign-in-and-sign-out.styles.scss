@@ -1,9 +1,8 @@
 .sign-in-and-sign-out {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  margin: 5rem auto;
+  .login-forms {
+    display: flex;
+    flex-direction: column;
+  }
 
   @media all and (max-width: 1200px) {
     flex-direction: column;

@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import CustomButton from "../custom-button/CustomButton";
 import FormInput from "../form-input/FormInput";
-import SuccessNotification from "../SuccessNotification";
-import { useState } from "react";
+
 import "./sign-in.styles.scss";
 /* prettier-ignore */
 import {
@@ -21,7 +20,18 @@ import {
 import { connect } from "react-redux";
 import { setCurrentUser } from "./../../redux/user/user.actions";
 
-function SignIn({ setLoading, setCurrentUser, setModalActive, modalActive }) {
+/* Motion */
+
+import { motion, AnimatePresence } from "framer-motion";
+
+function SignIn({
+  setLoading,
+  setCurrentUser,
+  setModalActive,
+  modalActive,
+  loginActive,
+  setLoginActive,
+}) {
   let [signIn, setSignIn] = useState({ email: "", password: "" });
   let { email, password } = signIn;
 
@@ -60,8 +70,12 @@ function SignIn({ setLoading, setCurrentUser, setModalActive, modalActive }) {
   };
 
   return (
-    <div className="sign-in">
-      <h2>I already have an account</h2>
+    <motion.div
+      animate={{ opacity: 1 }}
+      transition={{ type: "tween", duration: 1 }}
+      className="sign-in"
+    >
+      <h1>Login Here</h1>
       <span>Sign in with your email and password</span>
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -83,13 +97,16 @@ function SignIn({ setLoading, setCurrentUser, setModalActive, modalActive }) {
         <div className="buttons">
           <CustomButton type="submit">Sign in</CustomButton>
           {/* prettier-ignore */}
-          <CustomButton
-              type="button"
-              onClick={signInWithGoogle}
-              isGoogleSignIn>Sign in with Google</CustomButton>
+          <CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn>
+            Sign in with Google
+          </CustomButton>
         </div>
+        <p>
+          Not yet member?{" "}
+          <span onClick={() => setLoginActive(!loginActive)}>Signup Now</span>
+        </p>
       </form>
-    </div>
+    </motion.div>
   );
 }
 

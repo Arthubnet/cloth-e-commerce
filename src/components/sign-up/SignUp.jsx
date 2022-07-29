@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./sign-up.styles.scss";
-import SuccessNotification from "../SuccessNotification";
+
 import CustomButton from "../custom-button/CustomButton";
 import FormInput from "../form-input/FormInput";
 /* Firebase */
@@ -19,8 +19,18 @@ import {
 /* Redux */
 import { connect } from "react-redux";
 import { setCurrentUser } from "./../../redux/user/user.actions";
+/* Framer Motion */
 
-function SignUp({ setLoading, setCurrentUser, modalActive, setModalActive }) {
+import { motion } from "framer-motion";
+
+function SignUp({
+  setLoading,
+  setCurrentUser,
+  setModalActive,
+  modalActive,
+  loginActive,
+  setLoginActive,
+}) {
   let [signUp, setSignUp] = useState({
     displayName: "",
     email: "",
@@ -71,9 +81,11 @@ function SignUp({ setLoading, setCurrentUser, modalActive, setModalActive }) {
   };
 
   return (
-    <div className="sign-up">
-      <h2 className="title">I do not have an account</h2>
-      <span>Sign up with your email and password</span>
+    <motion.div className="sign-up">
+      <div className="title">
+        <h1>Sign up here</h1>
+        <span>Sign up with your email and password</span>
+      </div>
       <form className="sign-up-form" onSubmit={handleSubmit}>
         <FormInput
           type="text"
@@ -107,9 +119,15 @@ function SignUp({ setLoading, setCurrentUser, modalActive, setModalActive }) {
           label="Confirm Password"
           required={true}
         />
-        <CustomButton type="submit">SIGN UP</CustomButton>
+        <div className="btn">
+          <CustomButton type="submit">Sign up</CustomButton>
+        </div>
       </form>
-    </div>
+      <p>
+        Have an account?{" "}
+        <span onClick={() => setLoginActive(!loginActive)}>Login Now</span>
+      </p>
+    </motion.div>
   );
 }
 
