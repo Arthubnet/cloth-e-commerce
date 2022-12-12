@@ -89,7 +89,7 @@ function ProductPage({ collections, addItem }) {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      transition={{ type: "tween" }}
+                      transition={{ type: "tween", duration: 0.1 }}
                       alt="promo"
                       key={count}
                     />
